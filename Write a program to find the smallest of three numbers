@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+  int a, b, c;
+  printf("ENTER THE THREE NUMBERS : ");
+  scanf("%d %d %d",&a,&b,&c);
+  if(a<b)
+  {
+    if(a<c)
+    printf("%d IS THE SMALLEST NUMBER",a);
+    else
+    printf("%d IS THE SMALLEST NUMBER",c);
+  }
+  else if(b<c)
+  printf("%d IS THE SMALLEST NUMBER",b);
+  else
+  printf("%d IS THE SMALLEST NUMBER",c);
+  return 0;
+}
