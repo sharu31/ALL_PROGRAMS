@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include<math.h>
+float time(float,float,float);
+int main()
+{
+   float hours,minutes,seconds;
+   printf("Enter the time (hours,minutes,seconds): ");
+   scanf("%f %f %f",&hours,&minutes,&seconds);
+   time(hours,minutes,seconds);
+   return 0;
+}
+float time(float h,float m,float s)
+{
+   float f;
+   f=((3600*h)+(60*m)+(s));
+   printf("In seconds:%f",f);
+   return 0;
+}
