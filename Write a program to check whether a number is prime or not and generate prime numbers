@@ -1,0 +1,55 @@
+#include <stdio.h>
+int prime(int);
+void gen(int);
+int main()
+{
+    int n,r;
+    printf("Enter the number(n):");
+    scanf("%d",&n);
+    r=prime(n);
+    if(r==0)
+    {
+        printf("It is not a prime number.");
+    }
+    else
+    {
+        printf("It is a prime number.");
+    }
+    gen(n);
+    return 0;
+}
+int prime(int n)
+{
+    int i,f=0,k;
+    for(i=1;i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            f++;
+        }
+    }
+    if(f==2)
+    {
+        k=1;
+    }
+    else
+    {
+        k=0;
+    }
+    return k;
+}
+void gen(int n)
+{
+    printf("\nThe prime numbers from 1 to %d",n);
+    printf(" are: ");
+    int i,s;
+    for(i=1;i<=n;i++)
+    {
+        s=prime(i);
+        if(s==1)
+        {
+            printf("%d  ",i);
+        }
+
+    }
+}
