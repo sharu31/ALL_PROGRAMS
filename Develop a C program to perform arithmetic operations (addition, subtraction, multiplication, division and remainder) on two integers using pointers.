@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int main()
+
+{
+    int no1,no2;
+    int *ptr1,*ptr2;
+    int sum,difference,product;
+    float quotient,remainder;
+    printf("Enter number 1:");
+    scanf("%d",&no1);
+    printf("Enter number 2:");
+    scanf("%d",&no2);
+    ptr1=&no1;
+    ptr2=&no2;
+    printf("\nAddress of number 1:%d",ptr1);
+    printf("\nAddress of number 2:%d\n",ptr2);
+    sum=(*ptr1)+(*ptr2);
+    difference=(*ptr1)-(*ptr2);
+    product=(*ptr1)*(*ptr2);
+    quotient=(*ptr1)/(*ptr2);
+    remainder=(*ptr1)%(*ptr2);
+    printf("Sum= %d\n",sum);
+    printf("Difference= %d\n",difference);
+    printf("Product= %d\n",product);
+    printf("Quotient= %f\n",quotient);
+    printf("Remainder= %f\n",remainder);
+    return 0;
+
+}
