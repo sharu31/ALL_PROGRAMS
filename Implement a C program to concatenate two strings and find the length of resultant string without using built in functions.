@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+    char a[20],b[20],c[40];
+    int i=0,j=0;
+    printf("Enter the first string:");
+    scanf("%s",&a);
+    printf("Enter the second string:");
+    scanf("%s",&b);
+    while (a[i]!='\0')
+    {
+        c[j]=a[i];
+        i++;
+        j++;
+    }
+    i=0;
+    while (b[i]!='\0')
+    {
+        c[j]=b[i];
+        i++;
+        j++;
+    }
+    c[j]='\0';
+    printf("After Concatenation: %s",c);
+    return 0;
+}
