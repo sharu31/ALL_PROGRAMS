@@ -1,4 +1,5 @@
 #include<stdio.h>
+float average(float,float,float);
 int main()
 {
     float avg,a,b,c;
@@ -9,9 +10,15 @@ int main()
     printf("Enter third number :");
     scanf("%f",&c);
 
-    avg=(a+b+c)/3;
+    avg=average(a,b,c);
 
     printf("\nAverage is = %f",avg);
 
     return 0;
  }
+float average(float x,float y,float z)
+{
+    float ave=(x+y+z)/3;
+    return ave;
+}
+
